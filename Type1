@@ -1,0 +1,16 @@
+# Name : Time Conversion (Second --> HH.MM.SS)
+
+# Library
+second = int(input("Seconds data :"))
+
+# Algorithm
+hour = second // 3600
+ssecond = second % 3600
+minute  = ssecond // 60
+left   = ssecond % 60
+
+print("%d hours %d minutes %d seconds"%(hour,minute,left))
+if hour > 0:
+    print("Your journey is long, you must prepare yourself my king!")
+else:
+    print("Just walk in the park, not for long my dear") 
